@@ -431,12 +431,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Your Name**  
+**Thammandra Saketh Ram**  
 IBM SkillsBuild AI Builders Challenge - June 2026
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: [@Sakethram2005](https://github.com/Sakethram2005)
+- LinkedIn: [](https://www.linkedin.com/in/thammandra-saketh-ram-7b1590321/).
+- Email: saketh123.indus@gmail.com
 
 ---
 
