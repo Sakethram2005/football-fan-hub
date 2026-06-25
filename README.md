@@ -435,7 +435,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 IBM SkillsBuild AI Builders Challenge - June 2026
 
 - GitHub: [@Sakethram2005](https://github.com/Sakethram2005)
-- LinkedIn: [](https://www.linkedin.com/in/thammandra-saketh-ram-7b1590321/).
+- LinkedIn: [thammandra-saketh-ram](https://www.linkedin.com/in/thammandra-saketh-ram-7b1590321/).
 - Email: saketh123.indus@gmail.com
 
 ---
