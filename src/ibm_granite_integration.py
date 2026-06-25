@@ -8,6 +8,10 @@ of football match predictions and statistics.
 import os
 from typing import Dict, Any, Optional
 import logging
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -19,16 +23,18 @@ class GraniteExplainer:
     Handles IBM Granite AI integration for generating natural language explanations
     """
     
-    def __init__(self, api_key: Optional[str] = None, project_id: Optional[str] = None):
+    def __init__(self, api_key: Optional[str] = None, project_id: Optional[str] = None, url: Optional[str] = None):
         """
         Initialize the Granite AI explainer
         
         Args:
             api_key: IBM Cloud API key (optional, will use env var if not provided)
             project_id: IBM watsonx.ai project ID (optional, will use env var if not provided)
+            url: watsonx.ai URL (optional, will use env var if not provided)
         """
         self.api_key = api_key or os.getenv("IBM_CLOUD_API_KEY")
         self.project_id = project_id or os.getenv("IBM_WATSONX_PROJECT_ID")
+        self.url = url or os.getenv("WATSONX_URL", "https://us-south.ml.cloud.ibm.com")
         
         self.model = None
         self.is_initialized = False
@@ -53,7 +59,7 @@ class GraniteExplainer:
             
             # Set up credentials
             credentials = Credentials(
-                url="https://us-south.ml.cloud.ibm.com",
+                url=self.url,
                 api_key=self.api_key
             )
             
