@@ -165,6 +165,40 @@ class DataPreprocessor:
         logger.info(f"File size: {output_path.stat().st_size / (1024*1024):.2f} MB")
 
 
+def load_and_preprocess_data(data_path: str = None) -> pd.DataFrame:
+    """
+    Convenience function to load and preprocess data in one step
+    
+    Args:
+        data_path: Path to the CSV file. If None, uses default path.
+    
+    Returns:
+        Cleaned and preprocessed DataFrame
+    """
+    if data_path is None:
+        # Try multiple possible paths
+        possible_paths = [
+            "data/raw/international_results.csv",
+            "data/processed/international_results_cleaned.csv",
+            "../data/raw/international_results.csv",
+            "../data/processed/international_results_cleaned.csv"
+        ]
+        
+        for path in possible_paths:
+            if Path(path).exists():
+                data_path = path
+                break
+        
+        if data_path is None:
+            raise FileNotFoundError("Could not find dataset. Please check data directory.")
+    
+    preprocessor = DataPreprocessor(data_path)
+    preprocessor.load_data()
+    preprocessor.clean_data()
+    
+    return preprocessor.df
+
+
 def main():
     """
     Main function to run data preprocessing
