@@ -214,7 +214,7 @@ Traditional sports analytics platforms are either too complex for casual fans or
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/football-fan-hub.git
+git clone https://github.com/Sakethram2005/football-fan-hub.git
 cd football-fan-hub
 ```
 
@@ -343,14 +343,15 @@ Our 55% accuracy significantly outperforms:
 
 ## 🎥 Demo Video
 
-**Duration**: 3 minutes  
+**Duration**: ~3 minutes
 **Content**:
 1. Problem statement and solution overview (30s)
 2. Match Predictor demonstration (60s)
 3. Team Statistics dashboard (45s)
 4. Head-to-Head analysis (45s)
 
-[Link to demo video will be added]
+> 🎬 Demo video link will be added here after recording.
+> See [`docs/demo_video_script.md`](docs/demo_video_script.md) for the full script.
 
 ---
 
@@ -431,12 +432,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Your Name**  
+**Saketh Ram**
 IBM SkillsBuild AI Builders Challenge - June 2026
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: [@Sakethram2005](https://github.com/Sakethram2005)
+- Repository: [football-fan-hub](https://github.com/Sakethram2005/football-fan-hub)
 
 ---
 
@@ -465,8 +465,8 @@ IBM SkillsBuild AI Builders Challenge - June 2026
 
 For questions or issues:
 1. Check the [documentation](docs/)
-2. Search [existing issues](https://github.com/yourusername/football-fan-hub/issues)
-3. Create a [new issue](https://github.com/yourusername/football-fan-hub/issues/new)
+2. Search [existing issues](https://github.com/Sakethram2005/football-fan-hub/issues)
+3. Create a [new issue](https://github.com/Sakethram2005/football-fan-hub/issues/new)
 4. Contact the author
 
 ---
