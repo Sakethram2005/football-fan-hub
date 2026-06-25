@@ -1,4 +1,4 @@
-# Python
+﻿# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -47,18 +47,14 @@ venv.bak/
 .env.local
 .env.*.local
 
-# Models (too large for git)
-models/*.pkl
-models/*.joblib
-models/*.h5
-models/*.pt
+# Models (too large for git - regenerate with train_model.py)
+models/
+!models/README.md
 
 # Data files (too large for git)
-data/raw/*.csv
-data/raw/*.json
-data/processed/*.csv
-data/processed/*.parquet
-
+data/results.csv
+data/raw/
+data/processed/
 # Streamlit
 .streamlit/secrets.toml
 
