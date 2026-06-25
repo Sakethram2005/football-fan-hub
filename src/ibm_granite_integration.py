@@ -54,7 +54,7 @@ class GraniteExplainer:
         
         try:
             from ibm_watsonx_ai import Credentials
-            from ibm_watsonx_ai.foundation_models import Model
+            from ibm_watsonx_ai.foundation_models import ModelInference
             from ibm_watsonx_ai.metanames import GenTextParamsMetaNames as GenParams
             
             # Set up credentials
@@ -63,9 +63,9 @@ class GraniteExplainer:
                 api_key=self.api_key
             )
             
-            # Initialize model
-            self.model = Model(
-                model_id="ibm/granite-13b-chat-v2",
+            # Initialize model (using Llama 3.3 70B as it's available in EU region)
+            self.model = ModelInference(
+                model_id="meta-llama/llama-3-3-70b-instruct",
                 credentials=credentials,
                 project_id=self.project_id,
                 params={
