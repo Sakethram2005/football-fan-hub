@@ -1,4 +1,4 @@
-﻿# âš½ World Cup Fan Intelligence Hub
+﻿# World Cup Fan Intelligence Hub
 
 **IBM SkillsBuild AI Builders Challenge - June 2026**  
 *Theme: "AI Inside the Match"*
