@@ -14,7 +14,7 @@ An AI-powered web application that gives every football fan instant match predic
 
 ---
 
-## ðŸŽ¯ The Problem
+## The Problem
 
 Football fans worldwide struggle to:
 - **Predict match outcomes** without access to advanced analytics
@@ -26,7 +26,7 @@ Traditional sports analytics platforms are either too complex for casual fans or
 
 ---
 
-## ðŸ’¡ Our Solution
+## Our Solution
 
 **World Cup Fan Intelligence Hub** democratizes football analytics by combining:
 
@@ -37,13 +37,13 @@ Traditional sports analytics platforms are either too complex for casual fans or
 
 ### Key Features
 
-#### ðŸ”® Match Predictor
+#### Match Predictor
 - Predict outcomes for any World Cup matchup
 - Get win/draw/loss probabilities with confidence scores
 - Receive AI-generated explanations in plain English
 - View key features influencing the prediction
 
-#### ðŸ“Š Team Statistics Dashboard
+#### Team Statistics Dashboard
 - Comprehensive analytics for 336+ national teams
 - Overall win/draw/loss records and goal statistics
 - Home vs Away performance comparison
@@ -51,7 +51,7 @@ Traditional sports analytics platforms are either too complex for casual fans or
 - Tournament participation history
 - Performance trends over time
 
-#### âš”ï¸ Head-to-Head Analysis
+#### Head-to-Head Analysis
 - Complete match history between any two teams
 - Win/loss records and goal statistics
 - Recent form trends
@@ -60,7 +60,7 @@ Traditional sports analytics platforms are either too complex for casual fans or
 
 ---
 
-## ðŸ† Why This Matters
+## Why This Matters
 
 ### For Football Fans
 - **Accessibility**: Complex analytics made simple through AI explanations
@@ -82,7 +82,7 @@ Traditional sports analytics platforms are either too complex for casual fans or
 
 ---
 
-## ðŸ› ï¸ Technical Architecture
+## Technical Architecture
 
 ### Technology Stack
 
