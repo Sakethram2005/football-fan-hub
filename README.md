@@ -350,7 +350,7 @@ Our 55% accuracy significantly outperforms:
 3. Team Statistics dashboard (45s)
 4. Head-to-Head analysis (45s)
 
-[Link to demo video will be added]
+[[Link to demo video]](https://youtu.be/2zP-7TNclMg)
 
 ---
 
