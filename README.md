@@ -1,6 +1,6 @@
-﻿# World Cup Fan Intelligence Hub
+# ⚽ World Cup Fan Intelligence Hub
 
-**IBM SkillsBuild AI Builders Challenge - June 2026**  
+**IBM SkillsBuild AI Builders Challenge - June 2026**
 *Theme: "AI Inside the Match"*
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
@@ -14,7 +14,7 @@ An AI-powered web application that gives every football fan instant match predic
 
 ---
 
-## The Problem
+## 🎯 The Problem
 
 Football fans worldwide struggle to:
 - **Predict match outcomes** without access to advanced analytics
@@ -26,24 +26,24 @@ Traditional sports analytics platforms are either too complex for casual fans or
 
 ---
 
-## Our Solution
+## 💡 Our Solution
 
 **World Cup Fan Intelligence Hub** democratizes football analytics by combining:
 
-1. **ðŸ¤– Machine Learning Predictions** - RandomForest model trained on 49,329 international matches (1872-2026)
-2. **ðŸ§  AI-Powered Explanations** - IBM watsonx.ai (Llama 3.3 70B) generates plain-English explanations
-3. **ðŸ“Š Interactive Dashboards** - Beautiful visualizations for team statistics and trends
-4. **âš”ï¸ Head-to-Head Analysis** - Complete historical matchup data between any two teams
+1. **🤖 Machine Learning Predictions** - RandomForest model trained on 49,329 international matches (1872-2026)
+2. **🧠 AI-Powered Explanations** - IBM watsonx.ai (Llama 3.3 70B) generates plain-English explanations
+3. **📊 Interactive Dashboards** - Beautiful visualizations for team statistics and trends
+4. **⚔️ Head-to-Head Analysis** - Complete historical matchup data between any two teams
 
 ### Key Features
 
-#### Match Predictor
+#### 🔮 Match Predictor
 - Predict outcomes for any World Cup matchup
 - Get win/draw/loss probabilities with confidence scores
 - Receive AI-generated explanations in plain English
 - View key features influencing the prediction
 
-#### Team Statistics Dashboard
+#### 📊 Team Statistics Dashboard
 - Comprehensive analytics for 336+ national teams
 - Overall win/draw/loss records and goal statistics
 - Home vs Away performance comparison
@@ -51,7 +51,7 @@ Traditional sports analytics platforms are either too complex for casual fans or
 - Tournament participation history
 - Performance trends over time
 
-#### Head-to-Head Analysis
+#### ⚔️ Head-to-Head Analysis
 - Complete match history between any two teams
 - Win/loss records and goal statistics
 - Recent form trends
@@ -60,7 +60,7 @@ Traditional sports analytics platforms are either too complex for casual fans or
 
 ---
 
-## Why This Matters
+## 🏆 Why This Matters
 
 ### For Football Fans
 - **Accessibility**: Complex analytics made simple through AI explanations
@@ -82,7 +82,7 @@ Traditional sports analytics platforms are either too complex for casual fans or
 
 ---
 
-## Technical Architecture
+## 🛠️ Technical Architecture
 
 ### Technology Stack
 
@@ -102,35 +102,35 @@ Traditional sports analytics platforms are either too complex for casual fans or
 - **IBM Watson Machine Learning** - Model deployment and inference
 
 **Data Processing**
-- **Python 3.14** - Core programming language
+- **Python 3.10+** - Core programming language
 - **pandas** - Data preprocessing and cleaning
 - **datetime** - Temporal feature engineering
 
 ### System Architecture
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                    Streamlit Web App                        â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”     â”‚
-â”‚  â”‚   Match      â”‚  â”‚    Team      â”‚  â”‚  Head-to-    â”‚     â”‚
-â”‚  â”‚  Predictor   â”‚  â”‚  Statistics  â”‚  â”‚    Head      â”‚     â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜     â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                            â”‚
-                            â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚              Prediction Engine (Python)                     â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
-â”‚  â”‚  Feature Engineering â†’ ML Model â†’ AI Explanation     â”‚  â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-         â”‚                    â”‚                    â”‚
-         â–¼                    â–¼                    â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚   Dataset    â”‚    â”‚ RandomForest â”‚    â”‚ IBM watsonx  â”‚
-â”‚  49,329      â”‚    â”‚    Model     â”‚    â”‚   Llama 3.3  â”‚
-â”‚  Matches     â”‚    â”‚  (55% acc)   â”‚    â”‚   70B Model  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌───────────────────────────────────────────────────────────┐
+│                    Streamlit Web App                       │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐      │
+│  │   Match      │  │    Team      │  │  Head-to-    │      │
+│  │  Predictor   │  │  Statistics  │  │    Head      │      │
+│  └──────────────┘  └──────────────┘  └──────────────┘      │
+└───────────────────────────────────────────────────────────┘
+                            │
+                            ▼
+┌───────────────────────────────────────────────────────────┐
+│              Prediction Engine (Python)                    │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │  Feature Engineering → ML Model → AI Explanation     │   │
+│  └─────────────────────────────────────────────────────┘   │
+└───────────────────────────────────────────────────────────┘
+         │                    │                    │
+         ▼                    ▼                    ▼
+┌──────────────┐    ┌──────────────┐    ┌──────────────┐
+│   Dataset    │    │ RandomForest │    │ IBM watsonx  │
+│  49,329      │    │    Model     │    │   Llama 3.3  │
+│  Matches     │    │  (55% acc)   │    │   70B Model  │
+└──────────────┘    └──────────────┘    └──────────────┘
 ```
 
 ### Machine Learning Pipeline
@@ -175,11 +175,11 @@ Traditional sports analytics platforms are either too complex for casual fans or
 
 ---
 
-## ðŸ“Š Dataset
+## 📊 Dataset
 
-**Source**: International Football Results (1872-2026)  
-**Size**: 49,329 matches  
-**Coverage**: 336 national teams  
+**Source**: International Football Results (1872-2026)
+**Size**: 49,329 matches
+**Coverage**: 336 national teams
 **Time Span**: 154 years (1872-2026)
 
 ### Dataset Columns
@@ -201,7 +201,7 @@ Traditional sports analytics platforms are either too complex for casual fans or
 
 ---
 
-## ðŸš€ Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -260,56 +260,56 @@ python tests/test_streamlit_app.py
 
 ---
 
-## ðŸ“ Project Structure
+## 📁 Project Structure
 
 ```
 football-fan-hub/
-â”œâ”€â”€ app/
-â”‚   â”œâ”€â”€ main.py                          # Main Streamlit application
-â”‚   â”œâ”€â”€ pages/
-â”‚   â”‚   â”œâ”€â”€ 1_ðŸ”®_Match_Predictor.py     # Match prediction page
-â”‚   â”‚   â”œâ”€â”€ 2_ðŸ“Š_Team_Statistics.py     # Team statistics page
-â”‚   â”‚   â””â”€â”€ 3_âš”ï¸_Head_to_Head.py        # Head-to-head analysis page
-â”‚   â””â”€â”€ __init__.py
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ data_preprocessing.py            # Data cleaning and preprocessing
-â”‚   â”œâ”€â”€ feature_engineering.py           # Feature creation for ML
-â”‚   â”œâ”€â”€ model_training.py                # RandomForest model training
-â”‚   â”œâ”€â”€ prediction_engine.py             # Complete prediction system
-â”‚   â”œâ”€â”€ ibm_granite_integration.py       # IBM watsonx.ai integration
-â”‚   â””â”€â”€ granite_explain.py               # AI explanation generation
-â”œâ”€â”€ data/
-â”‚   â”œâ”€â”€ raw/                             # Raw dataset
-â”‚   â””â”€â”€ processed/                       # Cleaned dataset
-â”œâ”€â”€ models/
-â”‚   â”œâ”€â”€ match_predictor.pkl              # Trained RandomForest model
-â”‚   â”œâ”€â”€ feature_scaler.pkl               # Feature scaler
-â”‚   â””â”€â”€ model_metrics.json               # Model performance metrics
-â”œâ”€â”€ tests/
-â”‚   â””â”€â”€ test_streamlit_app.py            # Application tests
-â”œâ”€â”€ scripts/
-â”‚   â”œâ”€â”€ download_dataset.py              # Dataset download script
-â”‚   â””â”€â”€ create_sample_dataset.py         # Sample data generator
-â”œâ”€â”€ docs/
-â”‚   â””â”€â”€ ibm_setup_guide.md               # IBM watsonx.ai setup guide
-â”œâ”€â”€ .streamlit/
-â”‚   â””â”€â”€ config.toml                      # Streamlit configuration
-â”œâ”€â”€ requirements.txt                      # Python dependencies
-â”œâ”€â”€ .env.example                         # Environment variables template
-â”œâ”€â”€ .gitignore                           # Git ignore rules
-â”œâ”€â”€ LICENSE                              # MIT License
-â”œâ”€â”€ README.md                            # This file
-â””â”€â”€ project-plan.md                      # Detailed project plan
+├── app/
+│   ├── main.py                          # Main Streamlit application
+│   ├── pages/
+│   │   ├── 1_🔮_Match_Predictor.py      # Match prediction page
+│   │   ├── 2_📊_Team_Statistics.py      # Team statistics page
+│   │   └── 3_⚔️_Head_to_Head.py         # Head-to-head analysis page
+│   └── __init__.py
+├── src/
+│   ├── data_preprocessing.py            # Data cleaning and preprocessing
+│   ├── feature_engineering.py           # Feature creation for ML
+│   ├── model_training.py                # RandomForest model training
+│   ├── prediction_engine.py             # Complete prediction system
+│   ├── ibm_granite_integration.py       # IBM watsonx.ai integration
+│   └── granite_explain.py               # AI explanation generation
+├── data/
+│   ├── raw/                             # Raw dataset
+│   └── processed/                       # Cleaned dataset
+├── models/
+│   ├── match_predictor.pkl              # Trained RandomForest model
+│   ├── feature_scaler.pkl               # Feature scaler
+│   └── model_metrics.json               # Model performance metrics
+├── tests/
+│   └── test_streamlit_app.py            # Application tests
+├── scripts/
+│   ├── download_dataset.py              # Dataset download script
+│   └── create_sample_dataset.py         # Sample data generator
+├── docs/
+│   └── ibm_setup_guide.md               # IBM watsonx.ai setup guide
+├── .streamlit/
+│   └── config.toml                      # Streamlit configuration
+├── requirements.txt                      # Python dependencies
+├── .env.example                         # Environment variables template
+├── .gitignore                           # Git ignore rules
+├── LICENSE                              # MIT License
+├── README.md                            # This file
+└── project-plan.md                      # Detailed project plan
 ```
 
 ---
 
-## ðŸŽ¯ Model Performance
+## 🎯 Model Performance
 
 ### RandomForest Classifier Metrics
 
-**Overall Accuracy**: 55.0%  
-**Cross-Validation Score**: 55.35% (Â±1.2%)
+**Overall Accuracy**: 55.0%
+**Cross-Validation Score**: 55.35% (±1.2%)
 
 **Class-wise Performance**:
 | Outcome | Precision | Recall | F1-Score | Support |
@@ -341,9 +341,9 @@ Our 55% accuracy significantly outperforms:
 
 ---
 
-## ðŸŽ¥ Demo Video
+## 🎥 Demo Video
 
-**Duration**: 3 minutes  
+**Duration**: 3 minutes
 **Content**:
 1. Problem statement and solution overview (30s)
 2. Match Predictor demonstration (60s)
@@ -354,7 +354,7 @@ Our 55% accuracy significantly outperforms:
 
 ---
 
-## ðŸ¤ IBM Technologies Used
+## 🤝 IBM Technologies Used
 
 ### IBM watsonx.ai
 - **Model**: Llama 3.3 70B Instruct
@@ -377,7 +377,7 @@ Our 55% accuracy significantly outperforms:
 
 ---
 
-## ðŸ“ˆ Future Enhancements
+## 📈 Future Enhancements
 
 ### Short-term (Next 3 months)
 - [ ] Add player-level statistics
@@ -402,16 +402,15 @@ Our 55% accuracy significantly outperforms:
 
 ---
 
-## ðŸ› Known Issues
+## 🐛 Known Issues
 
-1. **Unicode Display**: Some emojis may not display correctly in Windows console
-2. **Model Loading Time**: Initial load takes 5-10 seconds (cached afterwards)
-3. **API Rate Limits**: IBM watsonx.ai has rate limits for free tier
-4. **Large Dataset**: Full dataset is 15MB (may take time to load)
+1. **Model Loading Time**: Initial load takes 5-10 seconds (cached afterwards)
+2. **API Rate Limits**: IBM watsonx.ai has rate limits for free tier
+3. **Large Dataset**: Full dataset is 15MB (may take time to load)
 
 ---
 
-## ðŸ¤ Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -423,24 +422,24 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## ðŸ“„ License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## ðŸ‘¨â€ðŸ’» Author
+## 👨‍💻 Author
 
-**Thammandra Saketh Ram**  
+**Thammandra Saketh Ram**
 IBM SkillsBuild AI Builders Challenge - June 2026
 
 - GitHub: [@Sakethram2005](https://github.com/Sakethram2005)
-- LinkedIn: [thammandra-saketh-ram](https://www.linkedin.com/in/thammandra-saketh-ram-7b1590321/).
+- LinkedIn: [thammandra-saketh-ram](https://www.linkedin.com/in/thammandra-saketh-ram-7b1590321/)
 - Email: saketh123.indus@gmail.com
 
 ---
 
-## ðŸ™ Acknowledgments
+## 🙏 Acknowledgments
 
 - **IBM SkillsBuild** for organizing the AI Builders Challenge
 - **IBM watsonx.ai** for providing access to Llama 3.3 70B
@@ -451,7 +450,7 @@ IBM SkillsBuild AI Builders Challenge - June 2026
 
 ---
 
-## ðŸ“š References
+## 📚 References
 
 1. [IBM watsonx.ai Documentation](https://www.ibm.com/docs/en/watsonx-as-a-service)
 2. [Streamlit Documentation](https://docs.streamlit.io/)
@@ -461,7 +460,7 @@ IBM SkillsBuild AI Builders Challenge - June 2026
 
 ---
 
-## ðŸ“ž Support
+## 📞 Support
 
 For questions or issues:
 1. Check the [documentation](docs/)
@@ -473,7 +472,7 @@ For questions or issues:
 
 <div align="center">
 
-**âš½ Made with â¤ï¸ for football fans worldwide**
+**⚽ Made with ❤️ for football fans worldwide**
 
 *Powered by IBM watsonx.ai | Built with Streamlit | Trained on 154 years of football history*
 
